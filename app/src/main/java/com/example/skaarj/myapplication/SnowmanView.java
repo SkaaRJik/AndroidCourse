@@ -132,10 +132,8 @@ public class SnowmanView extends View {
             snowmanElements.add(new SnowmanTail(widthScr/2, heightScr/2-snowmanElements.get(0).radius-radius+delimetr*2, radius, paint));
         }
 
-
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
-
 
         canvas.drawPaint(paint);
         paint.setColor(Color.WHITE);
@@ -147,11 +145,5 @@ public class SnowmanView extends View {
             }
             canvas.drawCircle(this.snowflaps[i][0], this.snowflaps[i][1], this.snowflaps[i][2], paint);
         }
-
-
-
-
-
-
     }
 }

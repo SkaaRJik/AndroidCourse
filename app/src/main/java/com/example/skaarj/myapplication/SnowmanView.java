@@ -97,9 +97,9 @@ public class SnowmanView extends View {
 
         for(int i = 0 ; i < 100; i++){
             if(this.snowflaps[i][0] > this.widthScr) this.snowflaps[i][0] =  0;
-            else  this.snowflaps[i][0]++;
+            else  this.snowflaps[i][0]+= 4/this.snowflaps[i][2];
             if(this.snowflaps[i][1] > this.heightScr) this.snowflaps[i][1] = 0;
-            else  this.snowflaps[i][1]++;
+            else  this.snowflaps[i][1]+=this.snowflaps[i][2];
         }
 
         this.invalidate();

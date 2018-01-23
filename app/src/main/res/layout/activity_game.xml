@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.skaarj.myapplication.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textEditMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Минимум"
+            android:paddingRight="2dp" />
+
+        <EditText
+            android:id="@+id/textEditMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Максимум"
+            android:paddingLeft="2dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonPlay" />
+
+    <EditText
+        android:id="@+id/textViewURI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tel" />
+
+    <Button
+        android:id="@+id/buttonLaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startIntent"
+        android:text="Start" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showSnowman"
+        android:text="@string/snowman" />
+
+
+</LinearLayout>

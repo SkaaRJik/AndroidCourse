@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Тест</string>
+    <string-array name="films">
+        <item>Star wars</item>
+        <item>Interstellar</item>
+        <item>Aliens vs. predator</item>
+        <item>Дом странных детей. Мисс Пилигрим.</item>
+        <item>Чарли и шоколадная фабрика</item>
+        <item>Шрек</item>
+        <item>Валли</item>
+    </string-array>
+    <string name="buttonPlay">Играть</string>
+    <string name="refresh">Сбросить</string>
+    <string name="interval">в диапозоне </string>
+    <string name="guess">Это оно?</string>
+    <string name="greater">Больше!</string>
+    <string name="less">Меньше</string>
+    <string name="equal">УГАДАЛ!</string>
+    <string name="snowman">Снеговик</string>
+</resources>

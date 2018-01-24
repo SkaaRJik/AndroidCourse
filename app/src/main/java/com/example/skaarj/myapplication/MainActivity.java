@@ -78,4 +78,8 @@ public class MainActivity extends AppCompatActivity {
     public void goPlay(View view){
         this.startActivity(new Intent(MainActivity.this, GameActivity.class));
     }
+
+    public void startSpace(View view){
+        this.startActivity(new Intent(this, SpaceActivity.class));
+    }
 }

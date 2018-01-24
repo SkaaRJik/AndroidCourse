@@ -24,12 +24,9 @@ public class SpaceActivity extends AppCompatActivity {
             super.run();
             while (running) {
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {}
-                // каждые 50 мс вызываем функцию
-                // move() в основном потоке
-                // здесь используется передача в функцию
-                // т.н. анонимного класса
+                //Апдейтит вьюшку каждые 500 милис
                 spaceView.post(new Runnable() {
                     @Override
                     public void run() {
@@ -48,14 +45,14 @@ public class SpaceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_space);
         spaceView = this.findViewById(R.id.spaceView);
-        drawThread.start();
+    //    drawThread.start();
 
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
-        drawThread.switchThread();
+    //     drawThread.switchThread();
         return super.onTouchEvent(event);
     }
 }

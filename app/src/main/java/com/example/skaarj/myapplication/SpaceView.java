@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -36,7 +37,19 @@ public class SpaceView extends View {
         for (int i = 0; i < this.particles.length; i++) {
             this.particles[i].move();
         }
+        try {
+            Arrays.sort(this.particles);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         invalidate();
+    }
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        update();
+        return true;
     }
 
     @Override
